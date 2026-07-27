@@ -83,12 +83,24 @@ h2{
     text-align: center;
 }
 
+#color-value {
+    min-width: 100px;
+}
+
+#inset {
+    align-self: start;
+    height: 20px;
+    width: 20px;
+}
+
+/* parte de preview */
 #box {
     width: 100%;
     height: 300px;
     background-color: #e9d60a;
 }
 
+/* área de geracao das regras de css */
 #generated-rule {
     text-align: center;
 }
@@ -103,4 +115,36 @@ h2{
     margin: 0 auto;
     border: 2px solid #e9d60a;
     padding: 1rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#rules-area:hover {
+    background-color: #dfdfdf;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* responsividade */
+@media(max-width: 425px) {
+    #box-shadow-generator {
+        flex-direction: column;
+    }
+
+    #controls-container, #preview {
+        padding: 1 rem 2 rem;
+    }
+
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #generated-rule {
+        margin-top: 2rem;
+    }
 }
