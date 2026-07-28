@@ -4,8 +4,31 @@
     padding: 0;
 }
 
+body {
+    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);    
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
 h2{
-    /* afasta o título dos elementos abaixo dele */
+    /* afasta o subtítulo dos elementos abaixo dele */
     margin-bottom: 1.6rem;
     /* justifica o título no centro da página */
     text-align: center;
@@ -36,7 +59,7 @@ h2{
 .form-control label {
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #555;
+    color: #1a1a2e;
 }
 
 .range-input {
